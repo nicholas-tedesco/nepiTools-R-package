@@ -8,7 +8,8 @@
 #' @param perPopulation Optional input for "per population" that applies to rate (default: per 1000 members of population)
 #' @param decimal Optional input for rounding rate to certain decimal (default: two decimals)
 #'
-#' @return Character string including age-adjusted mortality rate, method of adjustment (direct), and per population
+#' @return DAR: character string including age-adjusted mortality rate, method of adjustment (direct), and per population
+#' @return AS: numeric vector of age-specific mortality rates
 #'
 #' @example
 #' sampleDeaths <- c(39745, 26372, 37125, 33679, 64386)
