@@ -44,5 +44,6 @@ indirectAA <- function(deaths, population, refDeathRates, refMortality, perPopul
   } else {
     IAR <- round(IAR.1, decimal)
   }
-  return(paste(paste(paste("Indirect age-adjusted mortality rate (per", perPopulation), "):", sep = ""), IAR))
+  age_specific <- deaths / population
+  list(IAR = paste(paste(paste("Indirect age-adjusted mortality rate (per", perPopulation), "):", sep = ""), IAR), AS = age_specific)
 }
