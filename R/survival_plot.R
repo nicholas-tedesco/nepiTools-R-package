@@ -22,7 +22,6 @@ survival_plot <- function(lifeTable) {
            + geom_step() + theme_linedraw()
            + labs(x = "Age", y = "Survival", title = "Life Table Estimate of Survival by Age")
            + scale_x_continuous(breaks = lifeTable$counter, labels = lifeTable$age)
-           + scale_y_continuous(labels = scales::percent)
            + theme(plot.title = element_text(hjust = 0.5)))
   return(plot)
 }
