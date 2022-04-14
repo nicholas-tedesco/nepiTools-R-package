@@ -42,5 +42,6 @@ directAA <- function(deaths, population, refPopulation, perPopulation, decimal) 
   } else {
     DAR <- round(DAR.1, decimal)
   }
-  return(paste(paste(paste("Direct age-adjusted mortality rate (per", perPopulation), "):", sep = ""), DAR))
+  age_specific <- deaths / population
+  list(DAR = paste(paste(paste("Direct age-adjusted mortality rate (per", perPopulation), "):", sep = ""), DAR), AS = age_specific)
 }
