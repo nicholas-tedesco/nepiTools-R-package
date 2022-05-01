@@ -12,3 +12,4 @@ LazyData: true
 RoxygenNote: 7.1.2
 Imports: 
     ggplot2
+    dplyr
