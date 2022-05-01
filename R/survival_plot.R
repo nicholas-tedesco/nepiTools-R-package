@@ -12,7 +12,7 @@
 
 survival_plot <- function(lifeTable) {
   if(!is.data.frame(lifeTable)) {
-    stop("Input must be data frame with columns ages and survival_prop")
+    stop("Input must be data frame with columns 'age' and 'survival_prop'")
   }
   lifeTable$counter <- 1
   for(i in 2:length(lifeTable$age)) {
