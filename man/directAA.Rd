@@ -18,7 +18,9 @@ directAA(deaths, population, refPopulation, perPopulation, decimal)
 \item{decimal}{Optional input for rounding rate to certain decimal (default: two decimals)}
 }
 \value{
-Character string including age-adjusted mortality rate, method of adjustment (direct), and per population
+DAR: character string including age-adjusted mortality rate, method of adjustment (direct), and per population
+
+AS: numeric vector of age-specific mortality rates
 }
 \description{
 Calculates age-adjusted mortality rate using the direct method

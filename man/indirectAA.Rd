@@ -27,7 +27,9 @@ indirectAA(
 \item{decimal}{Optional input for rounding rate to certain decimal (default: two decimals)}
 }
 \value{
-Character string including age-adjusted mortality rate, method of adjustment (indirect), and per population
+IAR: character string including age-adjusted mortality rate, method of adjustment (indirect), and per population
+
+AS: numeric vector of age-specific mortality rates
 }
 \description{
 Calculates age-adjusted mortality rate using the indirect method
