@@ -1,4 +1,4 @@
-Package: epiTools
+Package: nepiTools
 Type: Package
 Title: Performs Epidemiological Calculations Related to Mortality
 Version: 0.1.0
